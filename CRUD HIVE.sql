@@ -1,0 +1,16 @@
+CREATE DATABASE hive;
+
+USE hive;
+
+CREATE TABLE pessoas(
+id_pessoa INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+numero_telefone VARCHAR(30) NOT NULL,
+nome VARCHAR(100) NOT NULL,
+sobrenome VARCHAR(120),
+cpf VARCHAR(15) NOT NULL,
+data_nascimemto DATE NOT NULL,
+senha VARCHAR(248) NOT NULL,
+email VARCHAR(100) NOT NULL
+);
+
+DESCRIBE pessoas;

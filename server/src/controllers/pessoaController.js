@@ -6,7 +6,7 @@ class PessoaController{
     }
 
     create(req,res){
-        const numero_telefone = req.body.umero_telefone;
+        const numero_telefone = req.body.numero_telefone;
         const nome = req.body.nome;
         const sobrenome = req.body.sobrenome;
         const cpf = req.body.cpf;

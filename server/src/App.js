@@ -11,8 +11,8 @@ server.get('/', (req,res)=>{
 
 server.get('/pessoas', PessoaController.read);
 server.post('/pessoas', PessoaController.create);
-server.put('/pessoas/:id_cat', PessoaController.update);
-server.delete('/pessoas/:id_cat', PessoaController.delete)
+server.put('/pessoas/:id_pessoa', PessoaController.update);
+server.delete('/pessoas/:id_pessoa', PessoaController.delete)
 
 
 server.listen(5000);
