@@ -34,7 +34,7 @@ class PessoaModel{
     }
 
     update(id_pessoa,numero_telefone, nome, sobrenome, cpf, data_nascimento, senha, email){
-        let sql = `UPDATE pessoas SET nome_telefone="${numero_telefone}", nome="${nome}", sobrenome="${sobrenome}", cpf="${cpf}", data_nascimento="${data_nascimento}", senha="${senha}", email="${email}" WHERE id_pessoa="${id_pessoa}"`
+        let sql = `UPDATE pessoas SET numero_telefone="${numero_telefone}", nome="${nome}", sobrenome="${sobrenome}", cpf="${cpf}", data_nascimento="${data_nascimento}", senha="${senha}", email="${email}" WHERE id_pessoa="${id_pessoa}"`
         
         return new Promise((resolve,reject)=>{
             this.conexao.query(sql,(erro,retorno)=>{

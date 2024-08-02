@@ -43,7 +43,7 @@ class PessoaController{
 
     update(req,res){
         const id_pessoa = req.params.id_pessoa;
-        const numero_telefone = req.body.umero_telefone;
+        const numero_telefone = req.body.numero_telefone;
         const nome = req.body.nome;
         const sobrenome = req.body.sobrenome;
         const cpf = req.body.cpf;
